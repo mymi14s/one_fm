@@ -14,5 +14,5 @@ RUN bench get-app hrms --branch=version-15 --skip-assets && rm -rf apps/hrms/.gi
     bench get-app telephony --skip-assets && rm -rf apps/telephony/.git && \
     bench get-app helpdesk --skip-assets && rm -rf apps/helpdesk/.git && \
     bench get-app https://${GITHUB_TOKEN}@github.com/mymi14s/one_fm --branch=version-15 --skip-assets && \
-    rm -rf apps/one_fm/.git && rm -rf ~/.cache/pip
+    rm -rf apps/one_fm/.git && rm -rf ~/.cache/pip && mv apps/one_fm/assets/* /sites/assets/
 
