@@ -110,6 +110,7 @@ services:
         fi;
 
         bench migrate;
+        bench build;
   db:
     image: mariadb:10.6
     networks:
